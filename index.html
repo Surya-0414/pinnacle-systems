@@ -1,0 +1,1091 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anugraha</title>
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- bootstrap-script -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
+    <!-- MDB -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/7.1.0/mdb.min.css" rel="stylesheet" />
+
+    <!-- MDB -->
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/7.1.0/mdb.umd.min.js"></script>
+
+
+
+    <!-- for fonts -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300&family=Raleway&display=swap"
+        rel="stylesheet">
+
+
+    <!-- {{{{{{{{{{{{{{{}}}}}}}}}}}}}}} -->
+
+
+    <style>
+        .nav-fonts {
+
+            width: 100%;
+            /* font-size: 18px;
+    font-weight: 500;
+    line-height: 1.5em;
+    text-transform: none;
+    letter-spacing: 0;
+    text-align: start;
+    font-family: 'Poppins', 'Trebuchet MS', Helvetica, sans-serif; */
+            font-family: Poppins, sans-serif, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue !important;
+
+            /* font-family: 'Poppins', 'Trebuchet MS', Helvetica, sans-serif; */
+            font-size: 16px;
+            /* font-weight: 700; */
+            letter-spacing: 0.05em;
+            word-spacing: 2px;
+            /* font-weight: bold; */
+
+        }
+
+        body {
+            overflow-x: hidden;
+            width: 100%;
+            /* font-family: "Rubik",sans-serif;
+    font-size: 18px;
+    line-height: 1.7;
+    font-weight: 400;
+    color: var(--color-font);
+    -webkit-font-smoothing: antialiased; */
+
+
+            font-family: Poppins, sans-serif, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue !important;
+
+            /* font-family: 'Poppins', 'Trebuchet MS', Helvetica, sans-serif; */
+            font-size: 15px;
+            /* font-weight: 700; */
+            letter-spacing: 0.05em;
+            word-spacing: 2px;
+
+            /* color: black; */
+
+            margin: 0;
+            padding: 0;
+            display: flex;
+            /* font-family: 'Poppins', 'Trebuchet MS', Helvetica, sans-serif;
+    font-weight: 400;
+    line-height: 1.7em;
+    font-size: 16px;
+    color: #000000; */
+        }
+
+        /* .home-header-2{
+        font-size: 20px;
+    line-height: 1.5em;
+    letter-spacing: 0px;
+    font-weight: bold;
+    color: #000000 ;
+    } */
+
+
+        .home-header-s {
+            font-family: Poppins, sans-serif, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue !important;
+            /* font-family: 'Poppins', 'Trebuchet MS', Helvetica, sans-serif; */
+            font-size: 24px;
+            /* font-weight: 700; */
+            letter-spacing: 0.05em;
+            word-spacing: 2px;
+            /* font-weight: bold; */
+            color: black;
+        }
+
+        .home-banner-h1 {
+            font-family: Poppins, sans-serif, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue !important;
+            /* font-family: 'Poppins', 'Trebuchet MS', Helvetica, sans-serif; */
+            font-weight: 600;
+            font-weight: 600;
+            color: blue;
+
+            font-size: 60px;
+        }
+
+        .home-header-img {
+            width: 650px;
+            height: 580px;
+            /* height: 100%; */
+            overflow: hidden;
+            position: relative;
+        }
+
+        .image {
+            width: 100%;
+            height: 80%;
+            position: absolute;
+            transition: opacity 1s ease-in-out;
+            border-radius: 22px;
+        }
+
+        .head-colour-green1 {
+            /* color: #05cc5e96; */
+
+            color: black;
+            /* color: #04b57a96; */
+
+        }
+
+        .head-colour-green2 {
+            color: blue;
+        }
+
+        .home-header-btn1 {
+            border-radius: 44px;
+            font-weight: bold;
+        }
+
+        .home-header-btn2 {
+            border-radius: 44px;
+            font-weight: bold;
+        }
+
+        /* Media query for screens smaller than 768 pixels */
+        @media screen and (max-width: 767px) {
+            body {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .home-banner-h1 {
+                font-size: 19px;
+            }
+
+            .home-header-h5 {
+                font-size: 14px;
+            }
+
+            .home-header-img {
+                width: 200px;
+                height: 200px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 100%;
+            }
+
+            .top-nav-taps-img {
+                width: 100%;
+            }
+
+            .erp-next-img {
+                height: 200px;
+                width: 200px;
+            }
+
+            erp-header {
+                font-size: 20px;
+            }
+
+
+
+
+        }
+
+        /* Media query for screens between 768 and 1024 pixels */
+        @media screen and (min-width: 768px) and (max-width: 1023px) {
+            body {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .home-banner-h1 {
+                font-size: 24px;
+            }
+
+            .home-header-h5 {
+                font-size: 16px;
+            }
+
+            .home-header-img {
+                width: 400px;
+                height: 400px;
+            }
+
+            .home-our-technologies {
+
+                justify-content: center;
+                align-items: center;
+            }
+
+            .erp-next-img {
+                height: 400px;
+                width: 400px;
+            }
+
+            .erp-header {
+                font-size: 28px;
+            }
+
+        }
+
+        /* Media query for screens larger than 1024 pixels */
+        @media screen and (min-width: 1024px) {
+            .home-banner-h1 {
+                font-size: 60px;
+            }
+
+            .erp-next-img {
+                height: 700px;
+                width: 700px;
+            }
+
+            .erp-header {
+                font-size: 70px;
+            }
+
+        }
+
+        /* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+
+
+        #left-side {
+            flex: 1;
+
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        #right-side {
+            flex: 1;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        button {
+            display: block;
+            margin-bottom: 10px;
+            padding: 10px;
+            cursor: pointer;
+            background-color: #3498db;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+        }
+
+        .output {
+            display: none;
+
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        .output.show {
+            display: block;
+        }
+
+        /* portfolio-style */
+
+
+
+
+
+        .tab-contents {
+            /* font-family: questrial; */
+            word-spacing: 4px;
+            font-size: 17px;
+        }
+
+        .btn-home-side-nav-tab {
+            border-radius: 44px;
+            background-color: white;
+            /* font-weight: bold; */
+            color: blue;
+            border: 2px solid blue;
+        }
+
+        .btn-home-side-nav-tab:hover {
+            background-color: #3E8EDE;
+            color: white;
+        }
+
+        .home-top-nav-tab-btn {
+            border-radius: 20px;
+            background-color: white;
+            /* font-weight: bold; */
+            color: green;
+            border: 2px solid green;
+        }
+
+        .home-top-nav-tab-btn:hover {
+            background-color: #3E8EDE;
+            color: white;
+        }
+
+        /* clinds */
+        .movingImage {
+            position: relative;
+            animation: moveRightToLeft 20s linear infinite;
+        }
+
+        @keyframes moveRightToLeft {
+            0% {
+                left: 100%;
+            }
+
+            100% {
+                left: -100%;
+            }
+        }
+
+        /* colom img  colom that effect-js */
+        /* Hide content initially */
+        .home-grid1,
+        .home-grid2,
+        .home-grid3 {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.5s, transform 0.5s;
+        }
+
+        /* Show content when it comes into view */
+        .home-grid1.show,
+        .home-grid2.show,
+        .home-grid3.show {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* footer */
+        .footer-font-header {
+            /* font-family: 'Poppins', 'Trebuchet MS', Helvetica, sans-serif; */
+            font-family: Poppins, sans-serif, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue !important;
+            font-size: 19px;
+            /* font-weight: 700; */
+            letter-spacing: 0.05em;
+            word-spacing: 2px;
+            /* font-weight: bold; */
+        }
+
+        .footer-font-p1 {
+            color: black;
+            /* font-family: 'Poppins', 'Trebuchet MS', Helvetica, sans-serif; */
+            font-family: Poppins, sans-serif, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue !important;
+            font-size: 14px;
+            /* font-weight: 700; */
+            letter-spacing: 0.05em;
+            word-spacing: 2px;
+            /* font-weight: bold; */
+        }
+
+        .footer-font-p1:hover {
+            color: green;
+        }
+
+        .footer-font-fb {
+            color: white;
+        }
+
+        .footer-font-fb:hover {
+            color: blue;
+        }
+
+        .footer-font-insta {
+            color: white;
+        }
+
+        .footer-font-insta:hover {
+            color: palevioletred;
+        }
+
+        .footer-font-twitter {
+            color: white;
+        }
+
+        .footer-font-twitter:hover {
+            color: skyblue;
+        }
+
+        .footer-font-youtube {
+            color: white;
+        }
+
+        .footer-font-youtube:hover {
+            color: red;
+        }
+
+        .footer-img {
+            background-image: url(./img/double-2.jpg);
+
+            /* background-position: center; */
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            width: 100%;
+
+        }
+
+        .output {
+            display: none;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .erpnext-background {}
+
+        .erp-next-logo {
+            width: 30%;
+        }
+
+        .nav-green {
+            color: blue !important;
+            border-bottom: 2px solid transparent !important;
+
+
+        }
+
+        .nav-green:hover {
+
+            color: #04b57a96 !important;
+            border-bottom: 2px solid #04b57a96 !important;
+
+        }
+
+        .nav-green-d {
+            color: blue;
+        }
+
+        .nav-green-d:hover {
+            color: #04b57a96;
+            border-bottom: 2px solid #04b57a96;
+            background-color: #f8fcff;
+
+        }
+
+        .flip-box {
+            background-color: transparent;
+            border: none;
+            width: 300px;
+            height: 200px;
+            border: 1px solid #f1f1f1;
+            perspective: 1000px;
+            /* Remove this if you don't want the 3D effect */
+        }
+
+        /* This container is needed to position the front and back side */
+        .flip-box-inner {
+            position: relative;
+            border: none;
+
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            transition: transform 0.8s;
+            transform-style: preserve-3d;
+        }
+
+        /* Do an horizontal flip when you move the mouse over the flip box container */
+        .flip-box:hover .flip-box-inner {
+            transform: rotateY(180deg);
+        }
+
+        /* Position the front and back side */
+        .flip-box-front,
+        .flip-box-back {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            -webkit-backface-visibility: hidden;
+            /* Safari */
+            backface-visibility: hidden;
+        }
+
+        /* Style the front side */
+        .flip-box-front {
+            background-color: #bbb;
+            color: black;
+        }
+
+        /* Style the back side */
+        .flip-box-back {
+            /* background-color: rgb(101, 210, 201); */
+            background-color: white;
+            color: black;
+            transform: rotateY(180deg);
+        }
+    </style>
+
+</head>
+
+<body>
+    <!-- Navbar -->
+
+    <!-- Navbar -->
+ 
+
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top mb-5  nav-fonts">
+        <div class="container-fluid">
+            <a class="navbar-brand " href="./index.html">
+                <img style="height:70px ;" src="./image/Logo-1.png" alt="">
+            </a>
+            <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                 <span class="navbar-toggler-icon">      <i class="fas fa-bars"></i>
+                 </span>
+               </button> -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span><i class="fas fa-bars"></i></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav  ms-auto mb-2 mb-lg-0">
+
+                    <li class="nav-item">
+                        <a class="nav-link mx-4  nav-green" href="./home.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link mx-4  nav-green" href="./about.html">About Us</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link mx-4  nav-green" href="./about.html">Products</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link   mx-4  nav-green" href="./career.html">Infrastructure</a>
+                    </li>
+                    <!-- <li class="nav-item">
+                        <a class="nav-link   mx-4" href="./products.html">Products</a>
+                    </li> -->
+                                          
+
+                        <!-- <li class="nav-item">
+                        <a class="nav-link   mx-4" href="./portfolio.html">Portfolio</a>
+                    </li> -->
+
+
+                    <li class="nav-item">
+                        <a class="nav-link   mx-4  nav-green" href="./contact.html">Sustainability</a>
+                    </li>
+
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+
+    <!-- nav-bar -->
+
+
+    <!-- full container -->
+    <div class="container-fluid mt-5">
+        <!-- header -->
+        <div class="container ">
+            <div class="row ">
+                <div class="col-lg-7  mt-5">
+                    <h6 style="color: black;" class="about-h6 mt-5"> ANUGRAHA</h6>
+
+
+                    <h1 class="home-banner-h1">You Can Have Anything <span class="head-colour-green1">You Want
+                            In Life If Your Dress For It - <span style="color: blue;"> Edith Head</span></span></h1>
+                    <h5 class="mt-4 home-header-h5">200+ Projects | 500+ Happy Clients | 50+ Products </h5>
+                    <div class="mt-4">
+                        <a class="btn btn-success home-header-btn1 p- px-4" href="">
+                            <marquee behavior="scroll" direction="right">click here</marquee>
+                        </a>
+
+
+                        <a class="btn btn-primary  home-header-btn2 p- px-4" href="">
+                            <marquee behavior="scroll" direction="right">click here</marquee>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-lg-5  mt-5">
+
+
+
+                    <div class="home-header-img  mt-5" id="image-container">
+                        <img src="./image/Garmenng-1.png" class="image   img-fluid" alt="Image 1">
+                        <img src="./image/g-2.webp" class="image   img-fluid" alt="Image 2">
+                        <img src="./image/g-3.png" class="image  img-fluid" alt="Image 3">
+                    </div>
+
+
+                </div>
+
+
+            </div>
+            <!-- card -->
+            <h2 class="mt-5  text-center">OUR INFRASTRUCTURE</h2>
+            <p></p>
+
+            <div class="card-group">
+                <div style="background-color: rgb(191, 244, 244);" class="card mx-2">
+                    <div style="display: flex;justify-content: center;align-items: center;">
+                        <img style="height: 80px;width: 80px;" src="./image/Spinning.png" class="card-img-top mt-4"
+                            alt="...">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title  text-center">SPINNING</h5>
+                        <p class="card-text  text-center">The complete spinning plant is installed with auto control
+                            humidification …</p>
+                    </div>
+                </div>
+                <div style="background-color: rgb(245, 209, 240);" class="card mx-2">
+                    <div style="display: flex;justify-content: center;align-items: center;">
+                        <img style="height: 80px;width: 80px;" src="./image/Knitting.png" class="card-img-top mt-4"
+                            alt="...">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title  text-center">KNITTING</h5>
+                        <p class="card-text  text-center">Our Knitting division equipped with Hi-tech machineries from
+                            Germany…</p>
+                    </div>
+                </div>
+                <div style="background-color: rgb(209, 245, 209);" class="card mx-2">
+                    <div style="display: flex;justify-content: center;align-items: center;">
+                        <img style="height: 80px;width: 80px;" src="./image/Dying.png" class="card-img-top mt-4"
+                            alt="...">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title  text-center">PROCESSING</h5>
+                        <p class="card-text  text-center">Our Zero Liquid Discharge Eco – Friendly Processing division
+                            is known for …</p>
+                    </div>
+                </div>
+                <div style="background-color: rgb(245, 234, 209);" class="card mx-2">
+                    <div style="display: flex;justify-content: center;align-items: center;">
+                        <img style="height: 80px;width: 80px;" src="./image/Garmenting.png" class="card-img-top mt-4"
+                            alt="...">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title  text-center">GARMENTING</h5>
+                        <p class="card-text  text-center">Our Garmenting Divisions are located at three different sites
+                            …</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- side na and tabs -->
+            <div style="border: 2px dotted blue;background-color: rgba(215, 215, 215, 0.172);" class="p-3 mt-5">
+                <h2 style="color: blue;" class="text-center  mt-5">ABOUT ANUGRAHA</h2>
+
+                <h3 class="text-center mt-3">One Of The Largest Textile Manufacturers In India</h3>
+
+                <p class="text-center mt-3">We are Anugraha Fashion, a high quality vertically integrated garment
+                    manufacturer based in the knitwear capital of South India – Tirupur. Incorporated in 1988 and our
+                    core skills are manufacturing & exporting of knitted garments.</p>
+
+                <p class="text-center ">Our manufacturing process has been vertically integrated to facilitate all the
+                    processes involved in Garment Manufacture under one roof. We have our manufacturing facilities
+                    spread in four locations – consisting of Spinning, Knitting, Processing and Garmenting divisions,
+                    making us a totally integrated manufacturer from fibre to fashion garment…</p>
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div id="left-side">
+                            <button class="btn-home-side-nav-tab px-5" id="button1" onclick="showOutputSet1(1)">APP
+                                DEVELOPMENT <i style="color: white;;"
+                                    class="fa-solid fa-mobile-screen-button mx-1"></i></button>
+                            <button class="btn-home-side-nav-tab px-4" id="button2" onclick="showOutputSet1(2)">PRODUCT
+                                DEVELOPMENT
+                                <i style="color: white; ;" class="fa-brands fa-product-hunt mx-1"></i></button>
+                            <!-- <button class="btn-home-side-nav-tab px-5" id="button3" onclick="showOutputSet1(3)">WEB
+                            DEVELOPMENT <i style="color: white;;" class="fa-brands fa-window-restore mx-1"></i></button>
+                        <img class="img-fluid" src="" alt=""> -->
+                            <!-- <button onclick="showOutput('output10')">Button 10</button> -->
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div id="right-side">
+                            <div style="border: 2px solid blue;background-color: white;" id="output1"
+                                class="output p-4">
+                                <h4 style="color:blue;">YARN</h4>
+                                <p>We produce quality Yarns in a comprehensive range and counts like Ne 20’s to Ne 40’s,
+                                    …</p>
+                                <img style="background-color: blue;" class="img-fluid" src="./image/yarn.png" alt="">
+                            </div>
+                            <div style="border: 2px solid blue;background-color: white;" id="output2"
+                                class="output p-4">
+                                <h4 style="color:blue;">GARMENTING</h4>
+                                <p>Our Garmenting Divisions are located at three different sites with a collective
+                                    capacity …</p>
+                                <img style="background-color: blue;" class="img-fluid" src="./image/garment.png" alt="">
+                            </div>
+
+
+                            <!-- <div id="output10" class="output">Output for Button 10</div> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+            <h2 class="text-center  mt-5">Sustainability</h2>
+
+
+            <!-- dddddddd -->
+            <div class="row">
+
+                <div class="col-lg-6 col-md-6 col-sm-12">
+                    <div style="  height: 250px; max-width: 540px; ;" class="card mb-3">
+                        <div class="row g-0">
+                            <div style="display: flex;justify-content: center;align-items: center;" class="col-md-4">
+
+                                <img style="height: 70%;width: 100%;" class="img-fluid  "
+                                    src="./image/Sustinablity-01.png" alt="">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <h5 style="color: blue;" class="card-title">Good Health & Well-Being</h5>
+                                    <p class="card-text">We strive to continuously improve our commitment towards
+                                        Occupational Health & Safety Standards through improved & sustainable
+                                        technology, whereby we reduce the risks and prevent
+                                        accidents in the workplace.
+                                    </p>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12">
+                    <div class="card mb-3" style=" height: 250px; max-width: 540px;">
+                        <div class="row g-0">
+                            <div style="display: flex;justify-content: center;align-items: center;" class="col-md-4">
+                                <img style="height: 70%;width: 100%;" class="img-fluid " src="./image/Employee.png"
+                                    alt="">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <h5 style="color: blue;" class="card-title">Employee Welfare</h5>
+                                    <p class="card-text">Workplace is designed to make employees feel at home. We
+                                        provide them with opportunities to learn and grow, Free Transport facilities,
+                                        Nutritious food,& separate hostel facilities for women and men.</p>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+
+
+            <!-- dddddddd -->
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-12">
+                    <div class="card mb-3" style=" height: 250px; max-width: 540px;">
+                        <div class="row g-0">
+                            <div style="display: flex;justify-content: center;align-items: center;" class="col-md-4">
+                                <img style="height: 70%;width: 100%;" class="img-fluid  " src="./image/Womens.png"
+                                    alt="">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <h5 style="color: blue;" class="card-title">Women Empowerment</h5>
+                                    <p class="card-text">Women employees contribute more than 50% in our entire
+                                        workforce. Women Empowerment projects at regular intervals ensure their rights
+                                        and responsibilities, skill enhancement and financial independency.</p>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12">
+                    <div class="card mb-3 col-sm-12" style=" height: 250px; max-width: 540px;">
+                        <div class="row g-0">
+                            <div style="display: flex;justify-content: center;align-items: center;" class="col-md-4">
+                                <img style="height: 70%;width: 100%;" class="img-fluid "
+                                    src="./image/Environmental_Sustainablity_2.png" alt="">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <h5 style="color: blue;" class="card-title">Environmental Sustainability</h5>
+                                    <p class="card-text">We believe in responsible business growth by investing in
+                                        resource conservation and efficiency across water, energy, chemicals and waste
+                                        management.</p>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <!-- footer -->
+            <div class="container-fluid  p-4">
+
+                <footer style="" class="  text-white mt-4 footer-img">
+                    <!-- link -->
+                    <section class="container">
+                        <div class="row border-bottom ">
+                            <div class="col-lg-3 col-md-6 mt-5  ">
+                                <h4 style="color: green;" class="footer-font-header"> COMPANY</h4>
+                                <ul class="list-unstyled mb-0">
+                                    <li class="pb-1  ">
+                                        <a href="./career.html" class="  footer-font-p1">Careers</a>
+                                    </li>
+                                    <li class="pb-1">
+                                        <a href="" class=" footer-font-p1">Portfolio</a>
+                                    </li>
+                                    <li class="pb-1">
+                                        <a href="./products.html" class="  footer-font-p1">Products</a>
+                                    </li>
+                                    <li class="pb-1">
+                                        <a href="./contact.html" class=" footer-font-p1">Contact</a>
+                                    </li>
+                                </ul>
+
+
+
+
+                            </div>
+                            <!-- Quick Links  -->
+                            <div class="col-lg-3 col-md-6 mt-5 mb-5">
+                                <h4 style="color: green;" class="footer-font-header">SERVICES</h4>
+                                <ul class="list-unstyled mb-4 ">
+                                    <li class="pb-1">
+                                        <a href="#!" class="footer-font-p1">Mobile App Development</a>
+                                    </li>
+                                    <li class="pb-1">
+                                        <a href="#!" class="footer-font-p1">Web App Development</a>
+                                    </li>
+                                    <li class="pb-1">
+                                        <a href="#!" class="footer-font-p1">Ecommerce Application</a>
+                                    </li>
+                                    <li class="pb-1">
+                                        <a href="#!" class="footer-font-p1">UI UX Development</a>
+                                    </li>
+
+                                    <li class="pb-1">
+                                        <a href="#!" class="footer-font-p1">Cloud Computing</a>
+                                    </li>
+                                    <li class="pb-1">
+                                        <a href="#!" class="footer-font-p1">Progressive Web Apps</a>
+                                    </li>
+                                    <li class="pb-1">
+                                        <a href="#!" class="footer-font-p1">Web Portal Development</a>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <!-- Useful Links -->
+                            <div class="col-lg-3 col-md-6 mt-5 mb-5">
+                                <h4 style="color: green;" class="footer-font-header">ON-DEMAND SOLUTIONS</h4>
+                                <ul class="list-unstyled mb-0">
+                                    <li class="pb-1">
+                                        <a href="./garments-m-s.html" class="footer-font-p1">Garment Management
+                                            System</a>
+                                    </li>
+                                    <li class="pb-1">
+                                        <a href="./payroll-m-s.html" class="footer-font-p1">Payroll Management
+                                            System</a>
+                                    </li>
+                                    <li class="pb-1">
+                                        <a href="./textile-m-s.html" class="footer-font-p1">Textile Management
+                                            System</a>
+                                    </li>
+                                    <li class="pb-1">
+                                        <a href="./fabric-m-s.html" class="footer-font-p1">Fabric Management System</a>
+                                    </li>
+                                    <!-- <li class="pb-1">
+                                    <a href="./dyeing-m-s.html" class="footer-font-p1">Dyeing & printing Management System</a>
+                                </li> -->
+
+                                    <li class="pb-1">
+                                        <a href="./Inventory.html" class="footer-font-p1">Inventory</a>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="col-lg-3 col-md-6 mt-5 ">
+                                <h4 style="color: green;" class="footer-font-header">CONNECT WITH US</h4>
+                                <img class=" img-fluid" src="./img/regent_blue-removebg-preview.png" alt="">
+
+
+                                <!-- icons -->
+                                <div class="">
+                                    <a style="text-decoration: none; padding-right: 10px;padding-left: 20px;" href=""
+                                        class="   text-reset">
+                                        <i style="color: black; "
+                                            class="icons-1  fab fa-facebook-f g-5  footer-font-fb "></i>
+                                    </a>
+                                    <a style="text-decoration: none; padding-right: 10px;" href="" class=" text-reset ">
+                                        <i style="color:black ;" class="fa-brands fa-instagram footer-font-insta "></i>
+                                    </a>
+                                    <a style="text-decoration: none;padding-right: 10px;" href="" class=" text-reset">
+                                        <i style="color: black;" class="fa-brands fa-twitter  footer-font-twitter"></i>
+                                    </a>
+                                    <a style="text-decoration: none;" href="" class=" text-reset">
+                                        <i style="color: black;" class="fa-brands fa-youtube  footer-font-youtube"></i>
+                                    </a>
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </section>
+            </div>
+            <!-- copy -->
+            <div class="row  text-center">
+                <div class="col-lg-4 mt-2 mb-2">
+                    <p style=";color: black;">Copyright © 2024 REGENT, All rights reserved.</p>
+                </div>
+                <div style="display: flex;justify-content: center;align-items: center;"
+                    class="col-lg-4  d-flex mt-2   ">
+                    <a class="text-center" style="color:black; " href=""> Privacy Policy </a>
+                    <!-- <a class="text-center" style="color: white;" href=""> T&C </a> -->
+
+                </div>
+                <div class="col-lg-4 mt-2 mb-2">
+                    <p style=";color: black;">Powered by REGENT</p>
+
+                </div>
+            </div>
+            </footer>
+
+        </div>
+
+
+        <!-- clints -->
+
+
+
+
+
+
+
+        <!-- image-header-changing -->
+        <script>
+            document.addEventListener("DOMContentLoaded", function () {
+                let currentIndex = 0;
+                const images = document.querySelectorAll(".image");
+
+                function changeImage() {
+                    images[currentIndex].style.opacity = 0;
+                    currentIndex = (currentIndex + 1) % images.length;
+                    images[currentIndex].style.opacity = 1;
+                }
+
+                setInterval(changeImage, 3000);
+            });
+        </script>
+
+        <!-- side nav and tabs -->
+
+        <script>
+            // Initially show the output for Button 1 in Set 1
+            showOutputSet1(1);
+
+            function showOutputSet1(buttonNumber) {
+                // Hide all outputs in Set 1
+                document.querySelectorAll('#output1, #output2, #output3, #output4, #output5, #output6').forEach(output => {
+                    output.style.display = 'none';
+                });
+
+                // Show the output corresponding to the clicked button in Set 1
+                const outputId = 'output' + buttonNumber;
+                document.getElementById(outputId).style.display = 'block';
+            }
+        </script>
+
+        <!-- top-nav-and -taps -->
+        <script>
+            // Initially show the output for Button 7 in Set 2
+            showOutputSet2(7);
+
+            function showOutputSet2(buttonNumber) {
+                // Hide all outputs in Set 2
+                document.querySelectorAll('#output7, #output8, #output9, #output10, #output11, #output12').forEach(output => {
+                    output.style.display = 'none';
+                });
+
+                // Show the output corresponding to the clicked button in Set 2
+                const outputId = 'output' + buttonNumber;
+                document.getElementById(outputId).style.display = 'block';
+            }
+        </script>
+
+
+
+        <!-- colom img  colom that effect-js -->
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+
+        <script>
+            document.addEventListener("DOMContentLoaded", function () {
+                // Get all content elements
+                var contentElements = document.querySelectorAll(".home-grid1, .home-grid2, .home-grid3");
+
+                // Function to check if an element is in the viewport
+                function isElementInViewport(el) {
+                    var rect = el.getBoundingClientRect();
+                    return (
+                        rect.top >= 0 &&
+                        rect.left >= 0 &&
+                        rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+                        rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+                    );
+                }
+
+                // Function to handle scroll event
+                function handleScroll() {
+                    contentElements.forEach(function (element) {
+                        if (isElementInViewport(element)) {
+                            element.classList.add("show");
+                        }
+                    });
+                }
+
+                // Initial check on page load
+                handleScroll();
+
+                // Attach scroll event listener
+                window.addEventListener("scroll", handleScroll);
+            });
+
+        </script>
+
+        <!-- big-img -->
+
+
+
+</body>
+
+</html>

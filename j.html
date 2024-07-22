@@ -1,0 +1,1344 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>regent info solution</title>
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- bootstrap-script -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+    </script>
+
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
+    <!-- MDB -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/7.1.0/mdb.min.css" rel="stylesheet" />
+
+    <!-- MDB -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/7.1.0/mdb.umd.min.js">
+    </script>
+
+
+
+    <!-- for fonts -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300&family=Raleway&display=swap"
+        rel="stylesheet">
+
+
+    <!-- {{{{{{{{{{{{{{{}}}}}}}}}}}}}}} -->
+
+
+    <style>
+        .nav-fonts {
+
+            width: 100%;
+            /* font-size: 18px;
+    font-weight: 500;
+    line-height: 1.5em;
+    text-transform: none;
+    letter-spacing: 0;
+    text-align: start;
+    font-family: 'Poppins', 'Trebuchet MS', Helvetica, sans-serif; */
+            font-family: Poppins, sans-serif, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue !important;
+
+            /* font-family: 'Poppins', 'Trebuchet MS', Helvetica, sans-serif; */
+            font-size: 16px;
+            /* font-weight: 700; */
+            letter-spacing: 0.05em;
+            word-spacing: 2px;
+            /* font-weight: bold; */
+
+        }
+
+        body {
+            overflow-x: hidden;
+            width: 100%;
+            /* font-family: "Rubik",sans-serif;
+    font-size: 18px;
+    line-height: 1.7;
+    font-weight: 400;
+    color: var(--color-font);
+    -webkit-font-smoothing: antialiased; */
+
+
+            font-family: Poppins, sans-serif, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue !important;
+
+            /* font-family: 'Poppins', 'Trebuchet MS', Helvetica, sans-serif; */
+            font-size: 15px;
+            /* font-weight: 700; */
+            letter-spacing: 0.05em;
+            word-spacing: 2px;
+
+            /* color: black; */
+
+            margin: 0;
+            padding: 0;
+            display: flex;
+            /* font-family: 'Poppins', 'Trebuchet MS', Helvetica, sans-serif;
+    font-weight: 400;
+    line-height: 1.7em;
+    font-size: 16px;
+    color: #000000; */
+        }
+
+        /* .home-header-2{
+        font-size: 20px;
+    line-height: 1.5em;
+    letter-spacing: 0px;
+    font-weight: bold;
+    color: #000000 ;
+    } */
+
+
+        .home-header-s {
+            font-family: Poppins, sans-serif, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue !important;
+            /* font-family: 'Poppins', 'Trebuchet MS', Helvetica, sans-serif; */
+            font-size: 24px;
+            /* font-weight: 700; */
+            letter-spacing: 0.05em;
+            word-spacing: 2px;
+            /* font-weight: bold; */
+            color: black;
+        }
+
+        .home-banner-h1 {
+            font-family: Poppins, sans-serif, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue !important;
+            /* font-family: 'Poppins', 'Trebuchet MS', Helvetica, sans-serif; */
+            font-weight: 600;
+            font-weight: 600;
+            color: #000000;
+
+            font-size: 60px;
+        }
+
+        .home-header-img {
+            width: 650px;
+            height: 580px;
+            /* height: 100%; */
+            overflow: hidden;
+            position: relative;
+        }
+
+        .image {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            transition: opacity 1s ease-in-out;
+        }
+
+        .head-colour-green1 {
+            color: green;
+        }
+
+        .head-colour-green2 {
+            color: blue;
+        }
+
+        .home-header-btn1 {
+            border-radius: 44px;
+            font-weight: bold;
+        }
+
+        .home-header-btn2 {
+            border-radius: 44px;
+            font-weight: bold;
+        }
+
+        /* Media query for screens smaller than 768 pixels */
+        @media screen and (max-width: 767px) {
+            body {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .home-banner-h1 {
+                font-size: 19px;
+            }
+
+            .home-header-h5 {
+                font-size: 14px;
+            }
+
+            .home-header-img {
+                width: 200px;
+                height: 200px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 100%;
+            }
+
+            .top-nav-taps-img {
+                width: 100%;
+            }
+
+            .erp-next-img {
+                height: 200px;
+                width: 200px;
+            }
+
+            erp-header {
+                font-size: 20px;
+            }
+
+            .top-scroll-icon {
+                display: none;
+
+            }
+
+
+
+
+
+        }
+
+        /* Media query for screens between 768 and 1024 pixels */
+        @media screen and (min-width: 768px) and (max-width: 1023px) {
+            body {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .home-banner-h1 {
+                font-size: 24px;
+            }
+
+            .home-header-h5 {
+                font-size: 16px;
+            }
+
+            .home-header-img {
+                width: 400px;
+                height: 400px;
+            }
+
+            .home-our-technologies {
+
+                justify-content: center;
+                align-items: center;
+            }
+
+            .erp-next-img {
+                height: 400px;
+                width: 400px;
+            }
+
+            .erp-header {
+                font-size: 28px;
+            }
+
+        }
+
+
+        /* Media query for screens larger than 1024 pixels */
+        @media screen and (min-width: 1024px) {
+            .home-banner-h1 {
+                font-size: 60px;
+            }
+
+            .erp-next-img {
+                height: 700px;
+                width: 700px;
+            }
+
+            .erp-header {
+                font-size: 70px;
+            }
+
+
+
+        }
+
+        /* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+
+
+        #left-side {
+            flex: 1;
+
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        #right-side {
+            flex: 1;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        button {
+            display: block;
+            margin-bottom: 10px;
+            padding: 10px;
+            cursor: pointer;
+            background-color: #3498db;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+        }
+
+        .output {
+            display: none;
+
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        .output.show {
+            display: block;
+        }
+
+        /* portfolio-style */
+
+
+
+
+
+        .tab-contents {
+            /* font-family: questrial; */
+            word-spacing: 4px;
+            font-size: 17px;
+        }
+
+        .btn-home-side-nav-tab {
+            border-radius: 44px;
+            background-color: white;
+            /* font-weight: bold; */
+            color: green;
+            border: 2px solid green;
+        }
+
+        .btn-home-side-nav-tab:hover {
+            background-color: #3E8EDE;
+            color: white;
+        }
+
+        .home-top-nav-tab-btn {
+            border-radius: 20px;
+            background-color: white;
+            /* font-weight: bold; */
+            color: green;
+            border: 2px solid green;
+        }
+
+        .home-top-nav-tab-btn:hover {
+            background-color: #3E8EDE;
+            color: white;
+        }
+
+        /* clinds */
+        .movingImage {
+            position: relative;
+            animation: moveRightToLeft 20s linear infinite;
+        }
+
+        @keyframes moveRightToLeft {
+            0% {
+                left: 100%;
+            }
+
+            100% {
+                left: -100%;
+            }
+        }
+
+        /* colom img  colom that effect-js */
+        /* Hide content initially */
+        .home-grid1,
+        .home-grid2,
+        .home-grid3 {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.5s, transform 0.5s;
+        }
+
+        /* Show content when it comes into view */
+        .home-grid1.show,
+        .home-grid2.show,
+        .home-grid3.show {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* footer */
+        .footer-font-header {
+            /* font-family: 'Poppins', 'Trebuchet MS', Helvetica, sans-serif; */
+            font-family: Poppins, sans-serif, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue !important;
+            font-size: 19px;
+            /* font-weight: 700; */
+            letter-spacing: 0.05em;
+            word-spacing: 2px;
+            /* font-weight: bold; */
+        }
+
+        .footer-font-p1 {
+            color: black;
+            /* font-family: 'Poppins', 'Trebuchet MS', Helvetica, sans-serif; */
+            font-family: Poppins, sans-serif, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue !important;
+            font-size: 14px;
+            /* font-weight: 700; */
+            letter-spacing: 0.05em;
+            word-spacing: 2px;
+            /* font-weight: bold; */
+        }
+
+        .footer-font-p1:hover {
+            color: green;
+        }
+
+        .footer-font-fb {
+            color: white;
+        }
+
+        .footer-font-fb:hover {
+            color: blue;
+        }
+
+        .footer-font-insta {
+            color: white;
+        }
+
+        .footer-font-insta:hover {
+            color: palevioletred;
+        }
+
+        .footer-font-twitter {
+            color: white;
+        }
+
+        .footer-font-twitter:hover {
+            color: skyblue;
+        }
+
+        .footer-font-youtube {
+            color: white;
+        }
+
+        .footer-font-youtube:hover {
+            color: red;
+        }
+
+        .footer-img {
+            background-image: url(./img/double-2.jpg);
+
+            /* background-position: center; */
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            width: 100%;
+
+        }
+
+        .output {
+            display: none;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .erpnext-background {}
+
+        .erp-next-logo {
+            width: 30%;
+        }
+
+        .nav-green {
+            color: green !important;
+            border-bottom: 2px solid transparent;
+
+        }
+
+        .nav-green:hover {
+
+            color: #3E8EDE !important;
+            border-bottom: 2px solid #3E8EDE !important;
+
+        }
+
+        .nav-green-d {
+            color: green;
+            border-bottom: 2px solid transparent;
+
+        }
+
+        .nav-green-d:hover {
+            color: #3E8EDE;
+            border-bottom: 2px solid #3E8EDE;
+            background-color: #f8fcff;
+
+        }
+
+        .ribbon {
+            width: 60px;
+            font-size: 14px;
+            padding: 4px;
+            position: absolute;
+            right: -25px;
+            top: -12px;
+            text-align: center;
+            border-radius: 25px;
+            transform: rotate(20deg);
+            background-color: rgb(252, 104, 104);
+            color: white;
+            font-weight: bold;
+        }
+
+
+
+
+        .btn0001 {
+
+
+            cursor: pointer;
+
+
+            position: relative;
+        }
+
+        #icon {
+
+            cursor: pointer;
+        }
+
+        .top-scroll-icon {
+            position: fixed;
+
+            bottom: 70px;
+            right: 5px;
+            width: 110px;
+            height: 90px;
+            font-size: 32px;
+            /* background: #FBBC05; */
+            border-radius: 100%;
+            cursor: pointer;
+            z-index: 999 !important;
+        }
+    </style>
+
+</head>
+
+<body>
+    <!-- Navbar -->
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top mb-5  nav-fonts">
+        <div class="container-fluid">
+            <a class="navbar-brand " href="./home.html">
+                <img style="height:70px ;" src="./img/regent_blue-removebg-preview.png" alt="">
+            </a>
+            <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                 <span class="navbar-toggler-icon">      <i class="fas fa-bars"></i>
+                 </span>
+               </button> -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+               data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+               aria-label="Toggle navigation">
+               <span><i class="fas fa-bars"></i></span>
+           </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav  ms-auto mb-2 mb-lg-0">
+
+                    <li class="nav-item">
+                        <a class="nav-link mx-4  nav-green" href="./home.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link mx-4  nav-green" href="./about.html">About Us</a>
+                    </li>
+                    <!-- <li class="nav-item">
+                        <a class="nav-link   mx-4" href="./products.html">Products</a>
+                    </li> -->
+                    <li class="nav-item dropdown  mx-4">
+                        <a class="nav-link dropdown-toggle  nav-green" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Products
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li class="mt-1"><a class="dropdown-item  nav-green-d" href="./garments-m-s.html">Garments
+                                    Management System (GMS)</a></li>
+                            <li class="mt-1"><a class="dropdown-item nav-green-d" href="./fabric-m-s.html">Fabric
+                                    Management System (FMS)</a></li>
+                            <li class="mt-1"><a class="dropdown-item nav-green-d" href="./textile-m-s.html">Textile
+                                    Management System (TMS)</a></li>
+                            <li class="mt-1"><a class="dropdown-item  nav-green-d" href="./payroll-m-s.html">Payroll
+                                    Managemen System (PMS)</a></li>
+                            <li class="mt-1"><a class="dropdown-item  nav-green-d" href="./Inventory.html">Inventory</a>
+                            </li>
+
+                        </ul>
+
+                        <!-- <li class="nav-item">
+                        <a class="nav-link   mx-4" href="./portfolio.html">Portfolio</a>
+                    </li> -->
+                    <li class="nav-item">
+                        <a class="nav-link   mx-4  nav-green" href="./career.html">Career</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link   mx-4  nav-green" href="./contact.html">Contact</a>
+                    </li>
+
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+
+    <!-- nav-bar -->
+
+
+    <!-- full container -->
+    <div class="container-fluid mt-5">
+        <!-- header -->
+        <div class="container ">
+            <div class="row ">
+                <div class="col-lg-6  mt-5">
+                    <h6 style="color: #3E8EDE;" class="about-h6 mt-5"> RE<span style="color:green;">G</span>ENT
+                        INFO SOLUTIONS</h6>
+
+
+                    <h1 class="home-banner-h1">We Bring Your Innovative <span class="head-colour-green1">Ideas to
+                            Life</span></h1>
+                    <h5 class="mt-4 home-header-h5">200+ Projects | 500+ Happy Clients | 50+ Products </h5>
+                    <div class="mt-4">
+                        <a class="btn btn-success home-header-btn1 p- px-4" href="./about.html">
+                            <marquee behavior="scroll" direction="right">About Us</marquee>
+                        </a>
+
+
+                        <a class="btn btn-primary  home-header-btn2 p- px-4" href="./products.html">
+                            <marquee behavior="scroll" direction="right">Products</marquee>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-lg-6  mt-5">
+
+
+
+                    <div class="home-header-img" id="image-container">
+                        <img src="./img/new-h01.jpg" class="image " alt="Image 1">
+                        <img src="./img/web-app-development-company-hme-banner.png" class="image" alt="Image 2">
+                        <!-- <img src="./img/a-a-a.png" class="image img-fluid" alt="Image 3"> -->
+                    </div>
+
+
+                </div>
+
+
+            </div>
+
+            <!-- side na and tabs -->
+            <div class="row">
+                <div class="col-lg-6">
+                    <div id="left-side">
+                        <button class="btn-home-side-nav-tab px-5  " id="button1" onclick="showOutputSet1(1)">APP
+                            DEVELOPMENT <i style="color: white;;"
+                                class="fa-solid fa-mobile-screen-button mx-1"></i></button>
+                        <button class="btn-home-side-nav-tab px-4 btn0001" id="button2" onclick="showOutputSet1(2)">PRODUCT
+                            DEVELOPMENT <span class="ribbon">HOT</span>
+                            <i style="color: white; ;" class="fa-brands fa-product-hunt mx-1"></i></button>
+                        <button class="btn-home-side-nav-tab px-5" id="button3" onclick="showOutputSet1(3)">WEB
+                            DEVELOPMENT <i style="color: white;;" class="fa-brands fa-window-restore mx-1"></i></button>
+                        <!-- <img class="img-fluid" src="./img/3 click.png" alt=""> -->
+                        <!-- <button onclick="showOutput('output10')">Button 10</button> -->
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div id="right-side">
+                        <div id="output1" class="output">
+                            <h4 style="color:green;">APP DEVELOPMENT</h4>
+                            <p>We turn your ideas into a quick, functional, low-cost, user-friendly, interactive app
+                                that will help your business thrive and make your customers’ lives easier.</p>
+                            <img class="img-fluid" src="./img/BB5.png" alt="">
+                        </div>
+                        <div id="output2" class="output">
+                            <h4 style="color:green;">PRODUCT DEVELOPMENT</h4>
+                            <p>We meet your needs by creating a custom product with our Services & & Integration based
+                                solutions to your specifications. </p>
+                            <img class="img-fluid" src="./img/erp-next-333333.png" alt="">
+                        </div>
+                        <div id="output3" class="output">
+                            <h4 style="color:green;">WEB DEVELOPMENT</h4>
+                            <p>We are a One-Stop Solution for providing the best web development services. We offer
+                                customized and affordable services to meet your needs.</p>
+                            <img class="img-fluid" src="./img/Admin Dashboard Features.png" alt="">
+                        </div>
+
+                        <!-- <div id="output10" class="output">Output for Button 10</div> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- big-img -->
+
+        <!-- <div id="video" class=""> -->
+        <div class="container text-center">
+            <h2 style="color: black;" class="mt-4 mb-4 home-header-s">FEATURES</h2>
+            <div class=""></div>
+            <div class="img-feature"></div>
+            <img src="img/pic1.png" alt="feature" class="img-fluid" id="">
+            <p style="color: green;" class="mt-4  mb-4  home-header-s">
+                Garment Management System <span style="color:#3E8EDE;"> Solution for Textile </span>
+            </p>
+
+        </div>
+
+
+        <!-- 3coloum center-img -->
+
+        <div class="row text-center mt-4" id="content-container">
+            <div class="col-lg-4 col-md-12 col-sm-12 home-grid1  mt-4  left-side-col">
+                <div>
+                    <h3 style="color: #3E8EDE;" class="home-header-s">CRM</h3>
+                </div>
+                <div>
+
+                    <p>RegentERP: Boost efficiency with lead generation, sales enhancement, and task automation. This
+                        CRM streamlines processes, saving time for business growth.</p>
+                </div>
+
+                <div>
+                    <h3 style="color: #3E8EDE;" class="home-header-s">Production</h3>
+                </div>
+                <div>
+                    <p>Skillfully oversee and control intricate bill of materials at various levels, coordinate
+                        production planning, manage job cards, and handle inventory with utmost efficiency.</p>
+                </div>
+
+
+                <div>
+                    <h3 style="color:#3E8EDE ;" class="home-header-s ">Purchase</h3>
+                </div>
+                <div>
+                    <p>Efficiently handle procurement processes, vendor management, purchase orders, and inventory
+                        control to optimize your supply chain and enhance operational effectiveness.</p>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-12 col-sm-12 home-grid2  mt-4  center-side-col">
+                <img class="img-fluid" src="./img/erp home.jpg" alt="">
+            </div>
+
+            <div class="col-lg-4  col-md-12 col-sm-12  home-grid3  mt-4  right-side-col">
+                <div>
+                    <h3 style="color: green;" class="home-header-s">Finance</h3>
+                </div>
+                <div>
+                    <p>Gain an instant insight into your financial liquidity. A comprehensive accounting module that
+                        encompasses all facets of financial record-keeping.</p>
+                </div>
+
+                <div>
+                    <h3 style="color: green;" class="home-header-s">Inventory</h3>
+                </div>
+                <div>
+                    <p>Attain a current perspective on your stock status. A thorough inventory module encompassing all
+                        facets of stock management, ensuring smooth control and organization.</p>
+                </div>
+
+
+                <div>
+                    <h3 style="color: green;" class="home-header-s">Order Planning</h3>
+                </div>
+                <div>
+                    <p>Acquire a real-time overview of your order planning activities. A comprehensive module dedicated
+                        to order planning that addresses all aspects of the process, promoting effective coordination
+                        and organization.</p>
+                </div>
+            </div>
+
+
+        </div>
+
+
+        <!-- img-portfolio-style -->
+
+
+        <div class="container">
+            <h2 style="color: black;" class="text-center mt-5 mb-5 home-header-s">Our Work</h2>
+            <!-- row-1 -->
+            <div class="mt-5 mb-5">
+                <div class="row mt-4 ">
+                    <!-- <h2 style="color: green;font-style: italic;"class="mt-4">FRAPPE</h2> -->
+
+                    <div class="col-lg-6 order-lg-1 order-2">
+
+                        <p class="tab-contents mt-2">
+                        <div class="features-list">
+                            <h3 style="color:green ;" class="home-header-s">Admin Dashboard Features</h3>
+                            <p>
+                                Access dashboard on any device. Easily manage your business operations and streamline
+                                your processes.
+                            </p>
+                            <ul class="right">
+                                <li class="li mt-1"> Sales Order Management</li>
+                                <li class="li mt-1">Inventory Tracking</li>
+                                <li class="li mt-1"> Financial Reporting</li>
+                                <li class="li mt-1">Production Planning</li>
+                                <li class="li mt-1"> Customer Relationship Management</li>
+                                <li class="li mt-1">Supplier and Purchase Management</li>
+                                <li class="li mt-1">Analytics and Insights</li>
+                                <li class="li mt-1">Mobile-Friendly Interface</li>
+                            </ul>
+                        </div>
+                        </p>
+                    </div>
+
+                    <div class="col-lg-6 order-lg-2 order-1">
+
+                        <img class="img-fluid" src="./img/1Admin Dashboard Features.png" alt="">
+                    </div>
+
+                </div>
+            </div>
+            <!-- 2 row -->
+
+            <div class="mt-5 mb-5">
+                <div class="row mt-4 ">
+
+                    <div class="col-lg-6 mt-4 animate">
+                        <img class="img-fluid" src="./img/Explore Premium Features.webp" alt="">
+                    </div>
+
+
+                    <div class="col-lg-6 mt-4">
+                        <!-- <h2 style="color: blue;font-style: italic;"class="">FLUTTER</h2> -->
+
+                        <p class="tab-contents mt-3">
+                        <div class="features-list-left">
+                            <h3 style="color:#3E8EDE ;" class="home-header-s">Explore Premium Features</h3>
+                            <p>
+                                Discover the powerful capabilities of Management System that enable your business to
+                                thrive. Seamlessly manage complex operations and enhance your efficiency.
+                            </p>
+                            <ul class="left">
+                                <li class="li mt-1">Integrated Financial Management</li>
+                                <li class="li mt-1">Advanced Inventory Control</li>
+                                <li class="li mt-1">Automated Purchase Orders</li>
+                                <li class="li mt-1">Real-time Analytics and Reports</li>
+                                <li class="li mt-1">Multi-Channel Sales Management</li>
+                                <li class="li mt-1">Customizable Workflows</li>
+                                <li class="li mt-1">Role-based Permissions</li>
+                                <li class="li mt-1">Responsive Mobile App</li>
+                            </ul>
+                        </div>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!-- 3 row -->
+
+            <div class="mt-5 mb-5">
+                <div class="row mt-4 ">
+
+                    <div class="col-lg-6 mt-4  order-lg-1 order-2">
+                        <!-- <h2 style="color: green;font-style: italic;"class="">PHP</h2> -->
+
+                        <p class="tab-contents mt-3">
+                        <div class="features-list">
+                            <h3 style="color: green;" class="home-header-s">HR Management, Attendance, and Salary
+                                Features</h3>
+                            <p>
+                                Handle your HR processes seamlessly. Manage employee attendance, track working hours,
+                                and ensure timely salary processing.
+                            </p>
+                            <ul class="right">
+                                <li class="li mt-1">Employee Database and Profiles</li>
+                                <li class="li  mt-1">Attendance Tracking and Reporting</li>
+                                <li class="li mt-1">Leave Management</li>
+                                <li class="li  mt-1">Payroll Processing</li>
+                                <li class="li  mt-1">Performance Appraisals</li>
+                                <li class="li mt-1">Training and Skill Development</li>
+                                <li class="li mt-1">Compliance Management</li>
+                                <li class="li mt-1">Employee Self-Service Portal</li>
+                            </ul>
+                        </div>
+                        </p>
+                    </div>
+                    <div class="col-lg-6 mt-4  order-lg-2 order-1">
+                        <img class="img-fluid" src="./img/1HR Management, Attendance, and Salary Features.webp" alt="">
+                    </div>
+                </div>
+            </div>
+            <!-- row-4 -->
+
+            <div class="mt-5 mb-5">
+                <div class="row mt-4 ">
+
+
+                    <div class="col-lg-6 mt-4 animate">
+                        <img class="img-fluid" src="./img/2bill.webp" alt="">
+                    </div>
+
+                    <div class="col-lg-6 mt-4">
+                        <!-- <h2 style="color: blue;font-style: italic;"class="">WEB DEVELOPMENT</h2> -->
+
+                        <p class="tab-contents mt-3">
+                        <div class="features-list-left">
+                            <h3 style="color: #3E8EDE;" class="home-header-s">Billing, Invoicing, and Payment Features
+                            </h3>
+                            <p>
+                                It empowers your business with comprehensive billing, invoicing, and payment
+                                capabilities. Efficiently manage your financial transactions and ensure seamless payment
+                                processing.
+                            </p>
+                            <ul class="left">
+                                <li class="li mt-1">Generate Professional Invoices</li>
+                                <li class="li mt-1">Automate Billing Cycles</li>
+                                <li class="li mt-1">Track Payments and Outstanding Balances</li>
+                                <li class="li mt-1">Integrated Payment Gateways</li>
+                                <li class="li mt-1">Multiple Currency Support</li>
+                                <li class="li mt-1">Recurring Invoices and Subscriptions</li>
+                                <li class="li mt-1">Billing Reports and Analytics</li>
+                                <li class="li mt-1 ">Secure Payment Handling</li>
+                            </ul>
+                        </div>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+        </div>
+
+        <!-- erp next -->
+
+        <div class="container-fluid erpnext-background">
+            <div style="display: flex; justify-content: center;align-items: center;">
+                <img class="erp-next-logo mt-5 mb-4" src="./img/erp next222222.png" alt="">
+            </div>
+            <!-- <h2 class="text-center erp-header">ERP <span style="color: green;"> Next </span></h2> -->
+            <div class="container">
+
+
+                <div style="display: flex;    justify-content: center;    align-items: center; " class="">
+                    <img class="erp-next-img" src="./img/erp-next-333333.png" alt="">
+
+                </div>
+
+                <div style=" display: flex; justify-content: space-evenly;
+
+            " class="row  mt-5 mb-5 ">
+                    <div class="col-lg-6 text-center">
+
+                        <h3 style="color:green ;">ERP Next Implementation and Consulting</h3>
+                        <p>we provid implementation,hosting and support service on ERP Next.ERPNext is a an Open Source,
+                            cloud platform that integrates your entire organization and help your employees focus on the
+                            right priorities. With a centralized, secure database, all authorized user get to see the
+                            latest status of various activities- bying, ,manufacturing,deliveries, helping your
+                            employees manage cutomer expectations more effiently and productively
+                        </p>
+
+                    </div>
+
+
+
+                    <div class="col-lg-6 text-center">
+                        <h3 style="color:#3E8EDE ;">ERPNext @ REGENT</h3>
+                        <p>We're an ERPNext implenentation and technology support provider. Our ERP Solution, based on
+                            the open-source ERPNext Platform, stremlines your business operations across the entire life
+                            cycle, create more visibility, strengthen your business and ultimatly enhances your
+                            profitabilty. We are specialist ERPNext Consulting conpany, with proven experience in
+                            helping organization to reduce busibess costs and ultimately increase profitability
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+        </div>
+
+
+
+
+        <!-- Tabs navs top -->
+        <div class="home-our-technologies mt-5">
+            <h2 style="color: black;" class="text-center  home-header-s">Our Technologies</h2>
+            <div id="left-side" class="   home-our-technologies  row">
+                <div class="col-lg-3"></div>
+                <div style="display: flex;justify-content: center;align-items: center;" class="col-lg-1">
+                    <button class="home-top-nav-tab-btn " id="button7" onclick="showOutputSet2(7)">Mobile App</button>
+                </div>
+                <div style="display: flex;justify-content: center;align-items: center;" class="col-lg-1">
+                    <button class="home-top-nav-tab-btn " id="button8" onclick="showOutputSet2(8)">Front End </button>
+                </div>
+                <div style="display: flex;justify-content: center;align-items: center;" class="col-lg-1">
+                    <button class="home-top-nav-tab-btn " id="button9" onclick="showOutputSet2(9)">Back End</button>
+                </div>
+                <div style="display: flex;justify-content: center;align-items: center;" class="col-lg-1">
+                    <button class="home-top-nav-tab-btn " id="button10" onclick="showOutputSet2(10)">UI/UX
+                        Design</button>
+                </div>
+                <div style="display: flex;justify-content: center;align-items: center;" class="col-lg-1">
+                    <button class="home-top-nav-tab-btn " id="button11" onclick="showOutputSet2(11)">Cloud Teck</button>
+                </div>
+                <div style="display: flex;justify-content: center;align-items: center;" class="col-lg-1">
+                    <button class="home-top-nav-tab-btn " id="button12" onclick="showOutputSet2(12)">Database
+                        Db</button>
+                </div>
+                <div class="col-lg-3"></div>
+            </div>
+
+            <div class="text-center" id="right-side">
+                <div id="output7" class="output">
+                    <img class="top-nav-taps-img" src="./img/tt1.png" alt="">
+                </div>
+                <div id="output8" class="output">
+                    <img class="top-nav-taps-img" src="./img/tt2.png" alt="">
+                </div>
+                <div id="output9" class="output">
+                    <img class="top-nav-taps-img" src="./img/tt3.png" alt="">
+                </div>
+                <div id="output10" class="output">
+                    <img class="top-nav-taps-img" src="./img/tt4.png" alt="">
+                </div>
+                <div id="output11" class="output">
+                    <img class="top-nav-taps-img" src="./img/tt5.png" alt="">
+                </div>
+                <div id="output12" class="output">
+                    <img class="top-nav-taps-img" src="./img/tt6.png" alt="">
+                </div>
+            </div>
+        </div>
+
+        <!-- clints -->
+        <h2 style="color: black;" class="text-center mt-4 mb-4  home-header-s">Client's</h2>
+
+        <div id="video" class="wrapper">
+
+
+            <div class="container-fluid" style="background-color: white;">
+                <marquee behavior="scroll" direction="left" scrollamount="12" loop="infinite" onmouseover="this.stop();"
+                    onmouseout="this.start();">
+                    <img class="mx-5" src="img/client1.png">
+
+                    <img class="mx-5" src="img/client2.png" width="150px" height="70px">
+
+                    <img class="mx-5" src="img/client3.png" width="150px" height="70px">
+
+                    <!-- <img class="mx-5" src="img/client4.png" width="180px" height="90px"> -->
+
+                    <img class="mx-5" src="img/client5.png" width="150px" height="70px">
+                    <img class="mx-5" src="img/client6.png" width="250px" height="70px">
+
+                    <img class="mx-5" src="img/client7.png" width="150px" height="70px">
+
+                    <!-- <img class="mx-5" src="img/client8.png" width="150px" height="70px">  -->
+
+
+                    <img class="mx-5" src="img/client9.png" width="150px" height="150px">
+
+                    <img class="mx-5" src="img/client10.png" width="150px" height="70px">
+
+                    <img class="mx-5" src="img/client11.png" width="150px" height="70px">
+
+                    <img class="mx-5" src="img/client12.png" width="150px" height="150px">
+
+                    <img class="mx-5" src="img/client13.png" width="150px" height="70px">
+
+                    <img class="mx-5" src="img/client14.png" width="150px" height="70px">
+
+                    <img class="mx-5" src="img/client15.png" width="150px" height="70px">
+
+                    <!-- <img class="mx-5" src="img/client16.png" width="200px" height="70px">  -->
+                    <img class="mx-5" src="img/client17.png" width="150px" height="70px">
+                    <img class="mx-5" src="img/client18.png" width="200px" height="70px">
+                    <img class="mx-5" src="img/client19.png" width="200px" height="70px">
+                    <img class="mx-5" src="./img/client21.PNG" width="200px" height="70px">
+
+                    <img class="mx-5" src="./img/client23.png" width="200px" height="70px">
+
+                </marquee>
+            </div>
+        </div>
+
+        <!-- +++++++++++++++++++++++++++++++ -->
+        <div>
+            <img class="top-scroll-icon" src="./img/topscroll-icon.gif" alt="Icon" id="">
+        </div>
+
+        <!-- +++++++++++++++++++++++ -->
+        <!-- footer -->
+
+
+        <!-- footer -->
+        <footer style="" class="  text-white mt-4 footer-img">
+            <div class="container-fluid  p-4">
+                <!-- link -->
+                <section class="container">
+                    <div class="row border-bottom ">
+                        <div class="col-lg-3 col-md-6 mt-5  ">
+                            <h4 style="color: green;" class="footer-font-header"> COMPANY</h4>
+                            <ul class="list-unstyled mb-0">
+                                <li class="pb-1  ">
+                                    <a href="./career.html" class="  footer-font-p1">Careers</a>
+                                </li>
+                                <li class="pb-1">
+                                    <a href="" class=" footer-font-p1">Portfolio</a>
+                                </li>
+                                <li class="pb-1">
+                                    <a href="./products.html" class="  footer-font-p1">Products</a>
+                                </li>
+                                <li class="pb-1">
+                                    <a href="./contact.html" class=" footer-font-p1">Contact</a>
+                                </li>
+                            </ul>
+
+
+
+
+                        </div>
+                        <!-- Quick Links  -->
+                        <div class="col-lg-3 col-md-6 mt-5 mb-5">
+                            <h4 style="color: green;" class="footer-font-header">SERVICES</h4>
+                            <ul class="list-unstyled mb-4 ">
+                                <li class="pb-1">
+                                    <a href="#!" class="footer-font-p1">Mobile App Development</a>
+                                </li>
+                                <li class="pb-1">
+                                    <a href="#!" class="footer-font-p1">Web App Development</a>
+                                </li>
+                                <li class="pb-1">
+                                    <a href="#!" class="footer-font-p1">Ecommerce Application</a>
+                                </li>
+                                <li class="pb-1">
+                                    <a href="#!" class="footer-font-p1">UI UX Development</a>
+                                </li>
+
+                                <li class="pb-1">
+                                    <a href="#!" class="footer-font-p1">Cloud Computing</a>
+                                </li>
+                                <li class="pb-1">
+                                    <a href="#!" class="footer-font-p1">Progressive Web Apps</a>
+                                </li>
+                                <li class="pb-1">
+                                    <a href="#!" class="footer-font-p1">Web Portal Development</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <!-- Useful Links -->
+                        <div class="col-lg-3 col-md-6 mt-5 mb-5">
+                            <h4 style="color: green;" class="footer-font-header">ON-DEMAND SOLUTIONS</h4>
+                            <ul class="list-unstyled mb-0">
+                                <li class="pb-1">
+                                    <a href="./garments-m-s.html" class="footer-font-p1">Garment Management System</a>
+                                </li>
+                                <li class="pb-1">
+                                    <a href="./payroll-m-s.html" class="footer-font-p1">Payroll Management System</a>
+                                </li>
+                                <li class="pb-1">
+                                    <a href="./textile-m-s.html" class="footer-font-p1">Textile Management System</a>
+                                </li>
+                                <li class="pb-1">
+                                    <a href="./fabric-m-s.html" class="footer-font-p1">Fabric Management System</a>
+                                </li>
+                                <!-- <li class="pb-1">
+                                    <a href="./dyeing-m-s.html" class="footer-font-p1">Dyeing & printing Management System</a>
+                                </li> -->
+
+                                <li class="pb-1">
+                                    <a href="./Inventory.html" class="footer-font-p1">Inventory</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="col-lg-3 col-md-6 mt-5 ">
+                            <h4 style="color: green;" class="footer-font-header">CONNECT WITH US</h4>
+                            <img class=" img-fluid" src="./img/regent_blue-removebg-preview.png" alt="">
+
+
+                            <!-- icons -->
+                            <div class="">
+                                <a style="text-decoration: none; padding-right: 10px;padding-left: 20px;" href=""
+                                    class="   text-reset">
+                                    <i style="color: black; "
+                                        class="icons-1  fab fa-facebook-f g-5  footer-font-fb "></i>
+                                </a>
+                                <a style="text-decoration: none; padding-right: 10px;" href="" class=" text-reset ">
+                                    <i style="color:black ;" class="fa-brands fa-instagram footer-font-insta "></i>
+                                </a>
+                                <a style="text-decoration: none;padding-right: 10px;" href="" class=" text-reset">
+                                    <i style="color: black;" class="fa-brands fa-twitter  footer-font-twitter"></i>
+                                </a>
+                                <a style="text-decoration: none;" href="" class=" text-reset">
+                                    <i style="color: black;" class="fa-brands fa-youtube  footer-font-youtube"></i>
+                                </a>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </section>
+            </div>
+            <!-- copy -->
+            <div class="row  text-center">
+                <div class="col-lg-4 mt-2 mb-2">
+                    <p style=";color: black;">Copyright © 2024 REGENT, All rights reserved.</p>
+                </div>
+                <div style="display: flex;justify-content: center;align-items: center;"
+                    class="col-lg-4  d-flex mt-2   ">
+                    <a class="text-center" style="color:black; " href=""> Privacy Policy </a>
+                    <!-- <a class="text-center" style="color: white;" href=""> T&C </a> -->
+
+                </div>
+                <div class="col-lg-4 mt-2 mb-2">
+                    <p style=";color: black;">Powered by REGENT</p>
+
+                </div>
+            </div>
+        </footer>
+
+    </div>
+
+
+    <!-- clints -->
+
+
+
+
+
+
+
+    <!-- image-header-changing -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            let currentIndex = 0;
+            const images = document.querySelectorAll(".image");
+
+            function changeImage() {
+                images[currentIndex].style.opacity = 0;
+                currentIndex = (currentIndex + 1) % images.length;
+                images[currentIndex].style.opacity = 1;
+            }
+
+            setInterval(changeImage, 3000);
+        });
+    </script>
+
+    <!-- side nav and tabs -->
+
+    <script>
+        // Initially show the output for Button 1 in Set 1
+        showOutputSet1(1);
+
+        function showOutputSet1(buttonNumber) {
+            // Hide all outputs in Set 1
+            document.querySelectorAll('#output1, #output2, #output3, #output4, #output5, #output6').forEach(output => {
+                output.style.display = 'none';
+            });
+
+            // Show the output corresponding to the clicked button in Set 1
+            const outputId = 'output' + buttonNumber;
+            document.getElementById(outputId).style.display = 'block';
+        }
+    </script>
+
+    <!-- top-nav-and -taps -->
+    <script>
+        // Initially show the output for Button 7 in Set 2
+        showOutputSet2(7);
+
+        function showOutputSet2(buttonNumber) {
+            // Hide all outputs in Set 2
+            document.querySelectorAll('#output7, #output8, #output9, #output10, #output11, #output12').forEach(output => {
+                output.style.display = 'none';
+            });
+
+            // Show the output corresponding to the clicked button in Set 2
+            const outputId = 'output' + buttonNumber;
+            document.getElementById(outputId).style.display = 'block';
+        }
+    </script>
+
+
+
+    <!-- colom img  colom that effect-js -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            // Get all content elements
+            var contentElements = document.querySelectorAll(".home-grid1, .home-grid2, .home-grid3");
+
+            // Function to check if an element is in the viewport
+            function isElementInViewport(el) {
+                var rect = el.getBoundingClientRect();
+                return (
+                    rect.top >= 0 &&
+                    rect.left >= 0 &&
+                    rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+                    rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+                );
+            }
+
+            // Function to handle scroll event
+            function handleScroll() {
+                contentElements.forEach(function (element) {
+                    if (isElementInViewport(element)) {
+                        element.classList.add("show");
+                    }
+                });
+            }
+
+            // Initial check on page load
+            handleScroll();
+
+            // Attach scroll event listener
+            window.addEventListener("scroll", handleScroll);
+        });
+
+    </script>
+
+    <!-- moving-icon -->
+
+
+    <script>
+        // JavaScript to handle the click event on the image
+        document.querySelector('.top-scroll-icon').addEventListener('click', function() {
+            window.scrollTo({ top: 0, behavior: 'smooth' }); // Scroll to the top of the page
+        });
+    </script>
+
+    <!-- <script>
+        // Function to show the prompt when the icon is clicked
+    function showPrompt() {
+      var name = prompt("Please enter your name:");
+      
+      if (name !== null) { // Check if the user clicked cancel
+        var mobileNumber = prompt("Hello, " + name + "! Please enter your mobile number:");
+        if (mobileNumber !== null && !isNaN(mobileNumber) && mobileNumber.length === 10) { // Check if the user clicked cancel or entered a non-numeric value, and if the length is 10 digits
+          alert("Thank you, " + name + " we will connect you shortly: " );
+        } else {
+          alert("Invalid input. Please enter a valid 10-digit mobile number.");
+        }
+      }
+    }
+    
+    // Add click event listener to the icon
+    var icon = document.getElementById("icon");
+    icon.addEventListener("click", showPrompt);
+    </script> -->
+
+
+
+</body>
+
+</html>
