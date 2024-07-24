@@ -35,13 +35,13 @@
         rel="stylesheet">
 
 
-        <!-- aos -->
+    <!-- aos -->
 
-        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-        <script>
-            AOS.init();
-          </script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
     <!-- {{{{{{{{{{{{{{{}}}}}}}}}}}}}}} -->
 
 
@@ -208,7 +208,21 @@
                 display: none !important;
             }
 
+            .icon-card {
 
+                display: none !important;
+            }
+
+            .img-in{
+                width: 100% !important;
+                height: 300px !important;
+            }
+
+            .btn-s-nav{
+                display: block;
+                justify-content: center;
+                align-items: center;
+            }
 
 
         }
@@ -253,6 +267,21 @@
                 display: none !important;
             }
 
+            .icon-card {
+
+                display: none !important;
+            }
+
+            .img-in{
+                width: 100% !important;
+                height: 400px !important;
+            }
+            .btn-s-nav{
+                display: block;
+                justify-content: center;
+                align-items: center;
+            }
+
         }
 
         /* Media query for screens larger than 1024 pixels */
@@ -271,6 +300,11 @@
             }
 
             .m-card {
+                display: none !important;
+            }
+
+            .icon-s-card {
+
                 display: none !important;
             }
 
@@ -340,11 +374,12 @@
         }
 
         .home-top-nav-tab-btn {
-            border-radius: 20px;
+            /* border-radius: 20px; */
             background-color: white;
             /* font-weight: bold; */
-            color: green;
-            border: 2px solid green;
+            color: blue;
+            border: 2px solid blue;
+            padding: 20px;
         }
 
         .home-top-nav-tab-btn:hover {
@@ -543,6 +578,11 @@
             color: black;
             transform: rotateY(180deg);
         }
+
+        .img-in {
+            width: 100%;
+            height: 450px;
+        }
     </style>
 
 </head>
@@ -612,323 +652,344 @@
     <!-- full container -->
     <div class="container-fluid mt-5">
         <!-- header -->
-        <div class="container ">
-            <div class="row ">
-                <div class="col-lg-7  mt-5">
-                    <h6 style="color: black;" class="about-h6 mt-5"> ANUGRAHA</h6>
+        <div style="position: relative;" class="container-fluid mt-5  innter-back">
 
+            <img class="img-fluid  img-in" src="./image/d1.webp" alt="">
 
-                    <h1 class="home-banner-h1">You Can Have Anything <span class="head-colour-green1">You Want
-                            In Life If Your Dress For It - <span style="color: blue;"> Edith Head</span></span></h1>
-                    <h5 class="mt-4 home-header-h5">4,000 MT Yarn | 18 Million Garment | 80% Products </h5>
-                    <div class="mt-4">
-                        <a class="btn btn-success home-header-btn1 p- px-4" href="">
-                            <marquee behavior="scroll" direction="right">click here</marquee>
-                        </a>
+            <!-- card-1 -->
 
-
-
-                        <a class="btn btn-primary  home-header-btn2 p- px-4" href="">
-                            <marquee behavior="scroll" direction="right">click here</marquee>
-                        </a>
-                    </div>
-                </div>
-
-                <div class="col-lg-5  mt-5">
-
-
-
-                    <div class="home-header-img  mt-5" id="image-container">
-                        <img src="./image/Garmenng-1.png" class="image   img-fluid" alt="Image 1">
-                        <img src="./image/g-2.webp" class="image   img-fluid" alt="Image 2">
-                        <img src="./image/g-3.png" class="image  img-fluid" alt="Image 3">
-                    </div>
-
+            <div class="row  icon-card">
+                <div style="display: flex; justify-content: space-evenly;align-items: center;"
+                    class="col-lg-2 col-md-6 col-sm-12">
+                    <img style="position: absolute;margin-top: -30px;" src="./image/c-1.png" alt="">
 
                 </div>
-
-
-            </div>
-            <!-- card -->
-            <h2 class="mt-5  text-center">OUR INFRASTRUCTURE </h2>
-            <p></p>
-
-            <div class="card-group">
                 
-                <div style="background-color: rgb(191, 244, 244);" class="card mx-2 ">
-                    <div style="display: flex;justify-content: center;align-items: center;">
-                        <img style="height: 80px;width: 80px;" src="./image/Spinning.png" class="card-img-top mt-4"
-                            alt="...">
-                    </div>
-                    <div class="card-body">
-                        <h5 class="card-title  text-center">SPINNING</h5>
-                        <p class="card-text  text-center">The complete spinning plant is installed with auto control
-                            humidification …</p>
-                    </div>
+                <div style="display: flex; justify-content: space-evenly;align-items: center;"
+                    class="col-lg-2 col-md-6 col-sm-12">
+                    <img style="position: absolute;margin-top: -30px;" src="./image/c-2.png" alt="">
                 </div>
-                <div style="background-color: rgb(245, 209, 240);" class="card mx-2">
-                    <div style="display: flex;justify-content: center;align-items: center;">
-                        <img style="height: 80px;width: 80px;" src="./image/Knitting.png" class="card-img-top mt-4"
-                            alt="...">
-                    </div>
-                    <div class="card-body">
-                        <h5 class="card-title  text-center">KNITTING</h5>
-                        <p class="card-text  text-center">Our Knitting division equipped with Hi-tech machineries from
-                            Germany…</p>
-                    </div>
+                <div style="display: flex; justify-content: space-evenly;align-items: center;"
+                    class="col-lg-2 col-md-6 col-sm-12">
+                    <img style="position: absolute;margin-top: -30px;" src="./image/c-3.png" alt="">
                 </div>
-                <div style="background-color: rgb(209, 245, 209);" class="card mx-2">
-                    <div style="display: flex;justify-content: center;align-items: center;">
-                        <img style="height: 80px;width: 80px;" src="./image/Dying.png" class="card-img-top mt-4"
-                            alt="...">
-                    </div>
-                    <div class="card-body">
-                        <h5 class="card-title  text-center">PROCESSING</h5>
-                        <p class="card-text  text-center">Our Zero Liquid Discharge Eco – Friendly Processing division
-                            is known for …</p>
-                    </div>
+                <div style="display: flex; justify-content: space-evenly;align-items: center;"
+                    class="col-lg-2 col-md-6 col-sm-12">
+                    <img style="position: absolute;margin-top: -30px;" src="./image/c-4.png" alt="">
                 </div>
-                <div style="background-color: rgb(245, 234, 209);" class="card mx-2">
-                    <div style="display: flex;justify-content: center;align-items: center;">
-                        <img style="height: 80px;width: 80px;" src="./image/Garmenting.png" class="card-img-top mt-4"
-                            alt="...">
-                    </div>
-                    <div class="card-body">
-                        <h5 class="card-title  text-center">GARMENTING</h5>
-                        <p class="card-text  text-center">Our Garmenting Divisions are located at three different sites
-                            …</p>
-                    </div>
+                <div style="display: flex; justify-content: space-evenly;align-items: center;"
+                    class="col-lg-2 col-md-6 col-sm-12">
+                    <img style="position: absolute;margin-top: -30px;;" src="./image/c-5.png" alt="">
                 </div>
-            </div>
-
-            <!-- side na and tabs -->
-            <div style="border: 2px dotted blue;background-color: rgba(215, 215, 215, 0.172);" class="p-3 mt-5">
-                <h2 style="color: blue;" class="text-center  mt-5">ABOUT ANUGRAHA</h2>
-
-                <h3 class="text-center mt-3">One Of The Largest Textile Manufacturers In India</h3>
-
-                <p class="text-center mt-3">We are Anugraha Fashion, a high quality vertically integrated garment
-                    manufacturer based in the knitwear capital of South India – Tirupur. Incorporated in 1988 and our
-                    core skills are manufacturing & exporting of knitted garments.</p>
-
-                <p class="text-center ">Our manufacturing process has been vertically integrated to facilitate all the
-                    processes involved in Garment Manufacture under one roof. We have our manufacturing facilities
-                    spread in four locations – consisting of Spinning, Knitting, Processing and Garmenting divisions,
-                    making us a totally integrated manufacturer from fibre to fashion garment…</p>
-                <div class="row">
-                    <div class="col-lg-6">
-                        <div id="left-side">
-                            <button class="btn-home-side-nav-tab px-5" id="button1" onclick="showOutputSet1(1)">APP
-                                DEVELOPMENT <i style="color: white;;"
-                                    class="fa-solid fa-mobile-screen-button mx-1"></i></button>
-                            <button class="btn-home-side-nav-tab px-4" id="button2" onclick="showOutputSet1(2)">PRODUCT
-                                DEVELOPMENT
-                                <i style="color: white; ;" class="fa-brands fa-product-hunt mx-1"></i></button>
-                            <!-- <button class="btn-home-side-nav-tab px-5" id="button3" onclick="showOutputSet1(3)">WEB
-                            DEVELOPMENT <i style="color: white;;" class="fa-brands fa-window-restore mx-1"></i></button>
-                        <img class="img-fluid" src="" alt=""> -->
-                            <!-- <button onclick="showOutput('output10')">Button 10</button> -->
-                        </div>
-                    </div>
-                    <div class="col-lg-6">
-                        <div id="right-side">
-                            <div style="border: 2px solid blue;background-color: white;" id="output1"
-                                class="output p-4">
-                                <h4 style="color:blue;">YARN</h4>
-                                <p>We produce quality Yarns in a comprehensive range and counts like Ne 20’s to Ne 40’s,
-                                    …</p>
-                                <img style="background-color: blue;" class="img-fluid" src="./image/yarn.png" alt="">
-                            </div>
-                            <div style="border: 2px solid blue;background-color: white;" id="output2"
-                                class="output p-4">
-                                <h4 style="color:blue;">GARMENTING</h4>
-                                <p>Our Garmenting Divisions are located at three different sites with a collective
-                                    capacity …</p>
-                                <img style="background-color: blue;" class="img-fluid" src="./image/garment.png" alt="">
-                            </div>
-
-
-                            <!-- <div id="output10" class="output">Output for Button 10</div> -->
-                        </div>
-                    </div>
+                <div style="display: flex; justify-content: space-evenly;align-items: center;"
+                    class="col-lg-2  col-md-6 col-sm-12">
+                    <img style="position: absolute;margin-top: -30px;;" src="./image/c-7.png" alt="">
                 </div>
-            </div>
 
-
-
-
-            <h2 class="text-center  mt-5">Sustainability</h2>
-
-
-            <!-- dddddddd -->
-            <div class="row">
-
-                <div class="col-lg-6 col-md-6 col-sm-12">
-                    <div style="  height: 250px; max-width: 540px; ;" class="card mb-3  l-card">
-                        <div class="row g-0">
-                            <div style="display: flex;justify-content: center;align-items: center;" class="col-md-4">
-
-                                <img style="height: 70%;width: 100%;" class="img-fluid  "
-                                    src="./image/Sustinablity-01.png" alt="">
-                            </div>
-                            <div class="col-md-8">
-                                <div class="card-body">
-                                    <h5 style="color: blue;" class="card-title">Good Health & Well-Being</h5>
-                                    <p class="card-text">We strive to continuously improve our commitment towards
-                                        Occupational Health & Safety Standards through improved & sustainable
-                                        technology, whereby we reduce the risks and prevent
-                                        accidents in the workplace.
-                                    </p>
-
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6 col-md-6 col-sm-12">
-                    <div class="card mb-3  l-card" style=" height: 250px; max-width: 540px;">
-                        <div class="row g-0">
-                            <div style="display: flex;justify-content: center;align-items: center;" class="col-md-4">
-                                <img style="height: 70%;width: 100%;" class="img-fluid " src="./image/Employee.png"
-                                    alt="">
-                            </div>
-                            <div class="col-md-8">
-                                <div class="card-body">
-                                    <h5 style="color: blue;" class="card-title">Employee Welfare</h5>
-                                    <p class="card-text">Workplace is designed to make employees feel at home. We
-                                        provide them with opportunities to learn and grow, Free Transport facilities,
-                                        Nutritious food,& separate hostel facilities for women and men.</p>
-
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
 
 
             </div>
 
 
-            <!-- dddddddd -->
-            <div class="row">
-                <div class="col-lg-6 col-md-6 col-sm-12">
-                    <div class="card mb-3  l-card" style=" height: 250px; max-width: 540px;">
-                        <div class="row g-0">
-                            <div style="display: flex;justify-content: center;align-items: center;" class="col-md-4">
-                                <img style="height: 70%;width: 100%;" class="img-fluid  " src="./image/Womens.png"
-                                    alt="">
-                            </div>
-                            <div class="col-md-8">
-                                <div class="card-body">
-                                    <h5 style="color: blue;" class="card-title">Women Empowerment</h5>
-                                    <p class="card-text">Women employees contribute more than 50% in our entire
-                                        workforce. Women Empowerment projects at regular intervals ensure their rights
-                                        and responsibilities, skill enhancement and financial independency.</p>
+            <!-- 2 card-m -->
+            <div class="row  icon-s-card mt-3">
+                <div class="col-lg-2 col-md-6 col-sm-12  ">
+                    <img style="background-color: rgb(227, 227, 227);border: 1px solid black;" class="w-100 p-4 mt-2"
+                        src="./image/c-1.png" alt="">
+                    <p class="text-center mt-2">Spinning
+                        350
+                        MT/month
+                    </p>
 
-                                </div>
-                            </div>
-                        </div>
-                    </div>
                 </div>
-                <div class="col-lg-6 col-md-6 col-sm-12">
-                    <div class="card mb-3   l-card" style=" height: 250px; max-width: 540px;">
-                        <div class="row g-0">
-                            <div style="display: flex;justify-content: center;align-items: center;" class="col-md-4">
-                                <img style="height: 70%;width: 100%;" class="img-fluid "
-                                    src="./image/Environmental_Sustainablity_2.png" alt="">
-                            </div>
-                            <div class="col-md-8">
-                                <div class="card-body">
-                                    <h5 style="color: blue;" class="card-title">Environmental Sustainability</h5>
-                                    <p class="card-text">We believe in responsible business growth by investing in
-                                        resource conservation and efficiency across water, energy, chemicals and waste
-                                        management.</p>
 
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                <div class="col-lg-2 col-md-6 col-sm-12">
+                    <img  style="background-color: rgb(227, 227, 227);border: 1px solid black;" class="w-100 p-4 mt-2"
+                    src="./image/c-2.png" alt="">
+                    <p class="text-center  mt-2">Knitting
+                        250
+                        MT/month
+                        
+                        </p>
                 </div>
+                <div class="col-lg-2 col-md-6 col-sm-12">
+                    <img style="background-color: rgb(227, 227, 227);border: 1px solid black;" class="w-100 p-4 mt-2"
+                    sty src="./image/c-3.png" alt="">
+                    <p class="text-center  mt-2">Dyeing
+                        350
+                        MT/month</p>
+                </div>
+                <div class="col-lg-2 col-md-6 col-sm-12">
+                    <img  style="background-color: rgb(227, 227, 227);border: 1px solid black;" class="w-100 p-4 mt-2"
+                    src="./image/c-4.png" alt="">
+                    <p class="text-center  mt-2">Printing
+                        50,000
+                        Pcs/Day</p>
+                </div>
+                <div class="col-lg-2 col-md-6 col-sm-12">
+                    <img style="background-color: rgb(227, 227, 227);border: 1px solid black;" class="w-100 p-4 mt-2"
+                    src="./image/c-5.png" alt="">
+                    <p class="text-center  mt-2">Embroidery
+                        20,000
+                        Pcs/Day</p>
+                </div>
+                <div class="col-lg-2  col-md-6 col-sm-12">
+                    <img style="background-color: rgb(227, 227, 227);border: 1px solid black;" class="w-100 p-4 mt-2"
+                    src="./image/c-7.png" alt="">
+                    <p class="text-center  mt-2">Garmenting
+                        100,000
+                        Pcs/Day</p>
+                </div>
+
 
 
             </div>
 
+            <!-- side-nav-tap -->
 
+            <div   class="row  mt-5">
+                <div style="border: 3px dotted blue; " class="col-lg-4 col-md-6 col-sm-12 mt-5  ">
+                    <div class="mx-5  btn-s-nav" id="left-side">
+                        <button style="width: 170px; ;"   class="home-top-nav-tab-btn text-center  px-5 " id="button7" onclick="showOutputSet2(7)">Spinning
+                        </button>
 
-            <!-- m-card -->
+                        <button  style="width: 170px;" class="home-top-nav-tab-btn  px-5" id="button8" onclick="showOutputSet2(8)">Knitting </button>
 
+                        <button  style="width: 170px;" class="home-top-nav-tab-btn  px-5" id="button9" onclick="showOutputSet2(9)">Processing
+                        </button>
 
-            <div class="row row-cols-1 row-cols-md-2 g-4">
-                <div class="col">
-                    <div class="card   m-card">
-                        <img src="./image/Sustinablity-01.png" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 style="color: blue;" class="card-title">Good Health & Well-Being</h5>
-                            <p class="card-text">We strive to continuously improve our commitment towards
-                                Occupational Health & Safety Standards through improved & sustainable
-                                technology, whereby we reduce the risks and prevent
-                                accidents in the workplace.
+                        <button style="width: 170px;" class="home-top-nav-tab-btn  px-5" id="button10" onclick="showOutputSet2(10)">Printing</button>
+                            <button  style="width: 170px;" class="home-top-nav-tab-btn  px-5" id="button11" onclick="showOutputSet2(11)">Embroidery</button>
+
+                                <button style="width: 170px;" class="home-top-nav-tab-btn  px-5" id="button12" onclick="showOutputSet2(12)">Garmenting
+                                </button>
+                    </div>
+                </div>
+                <div class="col-lg-8 col-md-6  col-sm-12 ">
+                    <div id="right-side">
+                        <div id="output7" class="output  w-100">
+                            <h4 style="color:blue;">Spinning</h4>
+                            <p>The complete spinning plant is installed with auto control humidification system and waste collection system from blowroom to combing departments. All the spinning frames are monitored by Ring Data System.
                             </p>
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <img class="img-fluid" src="./image/Spinning--480x329.png" alt="">
+                                </div>
+                                <div class="col-lg-6">
+                                    <ul>
+                                        <li>Product Mix – 100% Cotton Yarn</li>
+                                        <li>Installed Capacity – 18,000 Spindles
+                                       </li>
+                                        <li>Annual production – 4000 MT
+                                        </li>
+                                        <li>Counts Range – 20s to 40s
+                                        </li>
+                                        <li>Special Requirements – 100% Organic, IC2, BCI
+                                        </li>
+                                        <p style="color: blue;font-weight: bold;" class="mt-3">Certification & Highlights
+                                        </p>
+                                        <li>Product – GOTS, OCS, Oeko Tex 100, BCI
+                                        </li>
+                                        <li>Social Compliance – SA 8000, amfori BSCI
+                                        </li>
+                                        <li>Environmental – ISO 14001
+                                        </li>
+                                        <li>Green Energy Driven Manufacturing setup
+                                        </li>
+
+                                        
+                                    </ul>
+                                </div>
+
+                            </div>
                         </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card  m-card">
-                        <img src="./image/Employee.png" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 style="color: blue;" class="card-title">Employee Welfare</h5>
-                            <p class="card-text">Workplace is designed to make employees feel at home. We
-                                provide them with opportunities to learn and grow, Free Transport facilities,
-                                Nutritious food,& separate hostel facilities for women and men.</p>
+                        <div id="output8" class="output">
+                            <h4 style="color:blue;">Knitting</h4>
+                            <p>The complete spinning plant is installed with auto control humidification system and waste collection system from blowroom to combing departments. All the spinning frames are monitored by Ring Data System.
+                            </p>
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <img style="border-radius: 22px; height: 300px;width: 450px;" class="img-fluid" src="./image/k-1.jpg" alt="">
+                                </div>
+                                <div class="col-lg-6">
+                                    <ul>
+                                        <li>Product Mix – 100% Cotton Yarn</li>
+                                        <li>Installed Capacity – 18,000 Spindles
+                                       </li>
+                                        <li>Annual production – 4000 MT
+                                        </li>
+                                        <li>Counts Range – 20s to 40s
+                                        </li>
+                                        <li>Special Requirements – 100% Organic, IC2, BCI
+                                        </li>
+                                        <p style="color: blue;font-weight: bold;" class="mt-3">Certification & Highlights
+                                        </p>
+                                        <li>Product – GOTS, OCS, Oeko Tex 100, BCI
+                                        </li>
+                                        <li>Social Compliance – SA 8000, amfori BSCI
+                                        </li>
+                                        <li>Environmental – ISO 14001
+                                        </li>
+                                        <li>Green Energy Driven Manufacturing setup
+                                        </li>
+
+                                        
+                                    </ul>
+                                </div>
+
+                            </div>
                         </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card   m-card">
-                        <img src="./image/Womens.png" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 style="color: blue;" class="card-title">Women Empowerment</h5>
-                            <p class="card-text">Women employees contribute more than 50% in our entire
-                                workforce. Women Empowerment projects at regular intervals ensure their rights
-                                and responsibilities, skill enhancement and financial independency.</p>
+                        <div id="output9" class="output">
+                            <h4 style="color:blue;">Processing</h4>
+                            <p>The complete spinning plant is installed with auto control humidification system and waste collection system from blowroom to combing departments. All the spinning frames are monitored by Ring Data System.
+                            </p>
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <img class="img-fluid" src="./image/anugraha_Processing-01.png" alt="">
+                                </div>
+                                <div class="col-lg-6">
+                                    <ul>
+                                        <li>Product Mix – 100% Cotton Yarn</li>
+                                        <li>Installed Capacity – 18,000 Spindles
+                                       </li>
+                                        <li>Annual production – 4000 MT
+                                        </li>
+                                        <li>Counts Range – 20s to 40s
+                                        </li>
+                                        <li>Special Requirements – 100% Organic, IC2, BCI
+                                        </li>
+                                        <p style="color: blue;font-weight: bold;" class="mt-3">Certification & Highlights
+                                        </p>
+                                        <li>Product – GOTS, OCS, Oeko Tex 100, BCI
+                                        </li>
+                                        <li>Social Compliance – SA 8000, amfori BSCI
+                                        </li>
+                                        <li>Environmental – ISO 14001
+                                        </li>
+                                        <li>Green Energy Driven Manufacturing setup
+                                        </li>
+
+                                        
+                                    </ul>
+                                </div>
+
+                            </div>
                         </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card  m-card">
-                        <img src="./image/Environmental_Sustainablity_2.png" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 style="color: blue;" class="card-title">Environmental Sustainability</h5>
-                            <p class="card-text">We believe in responsible business growth by investing in
-                                resource conservation and efficiency across water, energy, chemicals and waste
-                                management.</p>
+                        <div id="output10" class="output">
+                            <h4 style="color:blue;">Printing</h4>
+                            <p>The complete spinning plant is installed with auto control humidification system and waste collection system from blowroom to combing departments. All the spinning frames are monitored by Ring Data System.
+                            </p>
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <img class="img-fluid" src="./image/Garmenng-1.png" alt="">
+                                </div>
+                                <div class="col-lg-6">
+                                    <ul>
+                                        <li>Product Mix – 100% Cotton Yarn</li>
+                                        <li>Installed Capacity – 18,000 Spindles
+                                       </li>
+                                        <li>Annual production – 4000 MT
+                                        </li>
+                                        <li>Counts Range – 20s to 40s
+                                        </li>
+                                        <li>Special Requirements – 100% Organic, IC2, BCI
+                                        </li>
+                                        <p style="color: blue;font-weight: bold;" class="mt-3">Certification & Highlights
+                                        </p>
+                                        <li>Product – GOTS, OCS, Oeko Tex 100, BCI
+                                        </li>
+                                        <li>Social Compliance – SA 8000, amfori BSCI
+                                        </li>
+                                        <li>Environmental – ISO 14001
+                                        </li>
+                                        <li>Green Energy Driven Manufacturing setup
+                                        </li>
+
+                                        
+                                    </ul>
+                                </div>
+
+                            </div>
                         </div>
+                        <div id="output11" class="output">
+                            <h4 style="color:blue;">Embroidery</h4>
+                            <p>The complete spinning plant is installed with auto control humidification system and waste collection system from blowroom to combing departments. All the spinning frames are monitored by Ring Data System.
+                            </p>
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <img class="img-fluid" src="./image/Embroidery--480x329.png" alt="">
+                                </div>
+                                <div class="col-lg-6">
+                                    <ul>
+                                        <li>Product Mix – 100% Cotton Yarn</li>
+                                        <li>Installed Capacity – 18,000 Spindles
+                                       </li>
+                                        <li>Annual production – 4000 MT
+                                        </li>
+                                        <li>Counts Range – 20s to 40s
+                                        </li>
+                                        <li>Special Requirements – 100% Organic, IC2, BCI
+                                        </li>
+                                        <p style="color: blue;font-weight: bold;" class="mt-3">Certification & Highlights
+                                        </p>
+                                        <li>Product – GOTS, OCS, Oeko Tex 100, BCI
+                                        </li>
+                                        <li>Social Compliance – SA 8000, amfori BSCI
+                                        </li>
+                                        <li>Environmental – ISO 14001
+                                        </li>
+                                        <li>Green Energy Driven Manufacturing setup
+                                        </li>
+
+                                        
+                                    </ul>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div id="output12" class="output">
+                            <h4 style="color:blue;">Garmenting</h4>
+                            <p>The complete spinning plant is installed with auto control humidification system and waste collection system from blowroom to combing departments. All the spinning frames are monitored by Ring Data System.
+                            </p>
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <img style="border-radius: 22px;" class="img-fluid mb-4" src="./image/gg-1.jpg" alt="">
+                                </div>
+                                <div class="col-lg-6">
+                                    <ul >
+                                        <li  >Product Mix – 100% Cotton Yarn</li>
+                                        <li>Installed Capacity – 18,000 Spindles
+                                       </li>
+                                        <li>Annual production – 4000 MT
+                                        </li>
+                                        <li>Counts Range – 20s to 40s
+                                        </li>
+                                        <li>Special Requirements – 100% Organic, IC2, BCI
+                                        </li>
+                                        <p style="color: blue;font-weight: bold;" class="mt-3">Certification & Highlights
+                                        </p>
+                                        <li>Product – GOTS, OCS, Oeko Tex 100, BCI
+                                        </li>
+                                        <li>Social Compliance – SA 8000, amfori BSCI
+                                        </li>
+                                        <li>Environmental – ISO 14001
+                                        </li>
+                                        <li>Green Energy Driven Manufacturing setup
+                                        </li>
+
+                                        
+                                    </ul>
+                                </div>
+
+                            </div>
+                        </div>
+                        <!-- <div id="output10" class="output">Output for Button 10</div> -->
                     </div>
                 </div>
             </div>
 
-
-
-
-
-
-            <!-- location -->
-            <div class="container-fluid  mt-3">
-                <p>location </p>
-
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d15669.091881005288!2d77.5389615!3d10.9427409!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1721713201779!5m2!1sen!2sin"
-                    width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade"></iframe>
-
-            </div>
-
-
-            <!-- footer -->
 
         </div>
-
-
 
         <footer class="bg-body-tertiary text-center">
             <!-- Grid container -->
